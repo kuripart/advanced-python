@@ -1,7 +1,8 @@
 import threading
 import time
 
-# GOAL: myTestDB.value is to be incremeted to 2 using 2 threads
+# Based on tutorial in: https://realpython.com/intro-to-python-threading/
+# GOAL: myTestDB.value is to be incremented to 2 using 2 threads
 
 class myThread (threading.Thread):
    def __init__(self, name):

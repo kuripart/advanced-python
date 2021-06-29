@@ -2,7 +2,7 @@ import concurrent.futures
 import time
 import threading
 
-# GOAL: myTestDB.value is to be incremeted to 2 using 2 threads
+# GOAL: myTestDB.value is to be incremented to 2 using 2 threads
 
 class myTestDB():
     def __init__(self):
