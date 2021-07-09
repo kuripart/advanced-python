@@ -10,7 +10,7 @@ def countdown(count):
 if __name__ == '__main__':
     pool = Pool(processes=2)
     start = time.time()
-    r1 = pool.apply_async(countdown, [MX//2])
+    r1 = pool.apply_async(countdown, [MX//2]) # alt: apply Call func with arguments args blocks until the result is ready.
     r2 = pool.apply_async(countdown, [MX//2])
     pool.close()
     pool.join()

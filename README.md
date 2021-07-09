@@ -5,3 +5,6 @@ Examples [here](asyncio)
 
 ## Threading
 Examples [here](thread)
+
+## Multiprocessing
+Examples [here](mutliprocessing)
