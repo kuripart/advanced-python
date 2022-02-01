@@ -12,7 +12,7 @@ tasks = [
     loop.create_task(printasync("hi")),
     loop.create_task(printasync("bye!")),
 ]
-loop.run_until_complete(asyncio.wait(tasks))
+loop.run_until_complete(asyncio.gather(*tasks)) # same as: loop.run_until_complete(asyncio.wait(*tasks))
 loop.close()
 end = time.time()
 print(f'Time: {end-start:.2f} sec')
